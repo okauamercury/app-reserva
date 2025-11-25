@@ -40,6 +40,11 @@ export class ReservaPage implements OnInit {
     reservasSalvas.push(novaReserva);
 
     localStorage.setItem('reservas', JSON.stringify(reservasSalvas));
+    await this.mostrarToast('Reserva realizada com sucesso!');
+
+    this.reservaForm.reset({
+      pessoas: 2
+    })
   }
    async mostrarToast(msg: string) {
     const toast = await this.toastClrtl.create({
