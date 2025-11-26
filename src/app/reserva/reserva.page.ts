@@ -1,16 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormControl, FormGroup, FormsModule, Validators } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonMenuButton, IonButtons, ToastController } from '@ionic/angular/standalone';
+import { FormControl, FormGroup, FormsModule, Validators, ReactiveFormsModule } from '@angular/forms';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonMenuButton, IonButtons, ToastController, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonLabel, IonText, IonInput, IonGrid, IonDatetime, IonCol, IonRow, IonSelectOption, IonFooter, IonButton, IonIcon } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-reserva',
   templateUrl: './reserva.page.html',
   styleUrls: ['./reserva.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonMenuButton, IonButtons]
+  imports: [IonIcon, IonButton, IonFooter, IonRow, IonCol, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
+    IonMenuButton, IonButtons, ReactiveFormsModule, IonCard,
+    IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonLabel, IonText, IonInput, IonGrid, IonDatetime, IonSelectOption]
 })
 export class ReservaPage implements OnInit {
+[x: string]: any;
 
 
   reservaForm = new FormGroup({
@@ -27,8 +30,8 @@ export class ReservaPage implements OnInit {
 
   constructor(private toastClrtl: ToastController) { }
 
-  async confirmaReserva(){
-    if(this.reservaForm.valid){
+  async confirmaReserva() {
+    if (this.reservaForm.valid) {
       this.mostrarToast('Preencha todos os campos obrigatórios!');
       return;
     }
@@ -46,7 +49,7 @@ export class ReservaPage implements OnInit {
       pessoas: 2
     })
   }
-   async mostrarToast(msg: string) {
+  async mostrarToast(msg: string) {
     const toast = await this.toastClrtl.create({
       message: msg,
       duration: 2000, // em milesimos de segundos 

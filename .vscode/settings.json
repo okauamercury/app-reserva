@@ -1,3 +1,45 @@
 {
-  "typescript.preferences.autoImportFileExcludePatterns": ["@ionic/angular/common", "@ionic/angular"]
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "@ionic/angular/common",
+    "@ionic/angular"
+  ],
+  "cSpell.words": [
+    "Alimentar",
+    "aniversario",
+    "Área",
+    "Cadeira",
+    "casal",
+    "Cliente",
+    "componente",
+    "confirma",
+    "confirmar",
+    "criança",
+    "Decoração",
+    "Detalhes",
+    "Digite",
+    "externa",
+    "Horario",
+    "interna",
+    "Janela",
+    "Jantar",
+    "Limpar",
+    "negocio",
+    "negocios",
+    "Observações",
+    "ocasiao",
+    "opção",
+    "pessoas",
+    "Preferencia",
+    "Próximo",
+    "Reserva",
+    "Restrição",
+    "Reunião",
+    "Romantico",
+    "secundary",
+    "Selecione",
+    "sempreferencia",
+    "Telefone",
+    "textarrea",
+    "tudo"
+  ]
 }
