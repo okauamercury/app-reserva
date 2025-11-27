@@ -22,7 +22,7 @@
             <ion-label position="stacked">
               Nome Completo <ion-text color="danger">*</ion-text>
             </ion-label>
-            <ion-input type="text" minLength="2" placeholder="Digite seu Nome" formGroupName="nome" required="nome">
+            <ion-input type="text" minLength="2" placeholder="Digite seu Nome" formControlName="nome" required="nome">
             </ion-input>
           </ion-item>
           <!-- Campo Telefone -->
@@ -30,7 +30,7 @@
             <ion-label position="stacked">
               Telefone <ion-text color="danger">*</ion-text>
             </ion-label>
-            <ion-input type="tel" maxLength="11" minLegnth="10" placeholder="11 94919-1776" formGroupName="telefone"
+            <ion-input type="tel" maxLength="11" minLegnth="10" placeholder="11 94919-1776" formControlName="telefone"
               inputmode="tel" required="telefone">
             </ion-input>
           </ion-item>
@@ -39,7 +39,7 @@
             <ion-label position="stacked">
               E-mail <ion-text color="danger">*</ion-text>
             </ion-label>
-            <ion-input type="email" inputmode="email" placeholder="email@exemplo.com" formGroupName="name" required="email">
+            <ion-input type="email" inputmode="email" placeholder="email@exemplo.com" formControlName="name" required="email">
             </ion-input>
           </ion-item>
         </ion-list>
