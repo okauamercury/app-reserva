@@ -50,24 +50,21 @@
       <ion-card-header>
         <ion-card-title>Detalhes da Reserva</ion-card-title>
       </ion-card-header>
-      <ion-content>
         <ion-grid>
           <ion-row>
             <ion-col>
                 <ion-label position="stacked">
+                  <ion-datetime></ion-datetime>
                   Data da Reserva <ion-text color="danger">*</ion-text>
                 </ion-label>
-                <ion-datetime formGroupName="data" presentation="date" placeholder="Selecione a data">
-                </ion-datetime>
+                <!-- <ion-datetime formGroupName="data" presentation="date" placeholder="Selecione a data">
+                </ion-datetime> -->
             </ion-col>
-
             <ion-col size="12" size-md="6">
                 <ion-label position="stacked">
                   Horario da Reserva <ion-text color="danger">*</ion-text>
                 </ion-label>
-                <ion-datetime formGroupName="hora" presentation="time" placeholder="Selecione a hora">
-
-                </ion-datetime>
+                <ion-datetime formGroupName="hora" presentation="time" placeholder="Selecione a hora"></ion-datetime>
             </ion-col>
             <ion-col size="12" size-md="6">
                 <ion-label position="stacked">
@@ -113,7 +110,6 @@
             </ion-col>
           </ion-row>
         </ion-grid>
-      </ion-content>
     </ion-card>
     <!-- botões -->
     <ion-footer class="ion-padding-top">
