@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonButtons, AlertController, IonMenuButton, IonList, IonItem, IonLabel, IonFooter, IonSkeletonText, IonText } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonButtons, AlertController, IonMenuButton, IonList, IonItem, IonLabel, IonFooter, IonSkeletonText, IonText, IonTab, IonTabs, IonTabBar, IonTabButton, IonIcon } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
 import { style } from '@angular/animations';
 
@@ -10,7 +10,7 @@ import { style } from '@angular/animations';
   templateUrl: './reserva-lista.page.html',
   styleUrls: ['./reserva-lista.page.scss'],
   standalone: true,
-  imports: [IonText, IonSkeletonText, IonFooter, IonLabel, IonItem, IonList, IonButtons, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonMenuButton]
+  imports: [IonIcon, IonTabButton, IonTabBar, IonTabs, IonTab, IonText, IonSkeletonText, IonFooter, IonLabel, IonItem, IonList, IonButtons, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonMenuButton]
 })
 export class ReservaListaPage implements OnInit {
 [x: string]: any;

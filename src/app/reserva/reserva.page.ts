@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, FormsModule, Validators, ReactiveFormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonMenuButton, IonButtons, ToastController, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonLabel, IonText, IonInput, IonGrid, IonDatetime, IonCol, IonRow, IonSelectOption, IonFooter, IonButton, IonIcon } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonMenuButton, IonButtons, ToastController, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonLabel, IonText, IonInput, IonGrid, IonDatetime, IonCol, IonRow, IonSelectOption, IonFooter, IonButton, IonIcon, IonAlert } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-reserva',
   templateUrl: './reserva.page.html',
   styleUrls: ['./reserva.page.scss'],
   standalone: true,
-  imports: [IonIcon, IonButton, IonFooter, IonRow, IonCol, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
+  imports: [IonAlert, IonIcon, IonButton, IonFooter, IonRow, IonCol, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
     IonMenuButton, IonButtons, ReactiveFormsModule, IonCard,
     IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonLabel, IonText, IonInput, IonGrid, IonDatetime, IonSelectOption]
 })
